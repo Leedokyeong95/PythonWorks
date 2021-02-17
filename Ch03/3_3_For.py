@@ -103,18 +103,3 @@ for n in nums:
 for animal in ('사자', '호랑이', '독수리'):
     print('animal :', animal)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
