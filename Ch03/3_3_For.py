@@ -14,7 +14,7 @@ for i in range(10, 20):
 for i in range(10, 0, -1):
     print('i :', i)
 
-#1부터 10까지 합
+#1부터 10까지 합.
 sum1 = 0
 
 for k in range(11):
