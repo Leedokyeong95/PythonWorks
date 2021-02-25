@@ -5,7 +5,7 @@
 """
 
 import re
-from re import findall
+from re import findall, match
 
 st1 = '1234 abc홍길동 ABC_555_6 이사도시'
 
