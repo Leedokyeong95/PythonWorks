@@ -6,6 +6,8 @@
 
 from selenium import webdriver
 from openpyxl import Workbook
+from datetime import datetime
+
 
 # 가상 브라우저 실행
 browser = webdriver.Chrome('./chromedriver.exe')
@@ -38,8 +40,9 @@ while True:
 
             title = dl.find_element_by_css_selector('dt:nth-child(2) > a')
             writer = dl.find_element_by_css_selector('dd > span.writing')
+            now = "{:%Y-%m-%d}".format(datetime.now())
 
-            sheet.append([writer.text, title.text.strip()])
+            sheet.append([writer.text, title.text.strip(), now])
          except:
             print('예외발생')
 
